@@ -1,0 +1,269 @@
+2025-11-19 00:03:28,048 - __main__ - [INFO] - ✅ OpenAI Agents SDK available
+2025-11-19 00:03:28,280 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ALL 10 AGENTS IMPORTED SUCCESSFULLY
+2025-11-19 00:03:28,430 - __main__ - [INFO] - ================================================================================
+2025-11-19 00:03:28,430 - __main__ - [INFO] - 🚀 PIPELINE START (Entity-Graph + DSA + Sequential L1-L4 + DeepSeek SDK)
+2025-11-19 00:03:28,431 - __main__ - [INFO] - ================================================================================
+2025-11-19 00:03:28,431 - __main__ - [INFO] - 📍 State: INIT
+2025-11-19 00:03:28,432 - __main__ - [INFO] - ✅ Workspace ready: workspace
+2025-11-19 00:03:28,513 - __main__ - [INFO] -  → INIT → VALIDATE_ENV [0.0s elapsed]
+2025-11-19 00:03:28,514 - __main__ - [INFO] - 📍 State: VALIDATE_ENV
+2025-11-19 00:03:28,514 - __main__ - [INFO] - ✅ DEEPSEEK_API_KEY validated
+2025-11-19 00:03:28,514 - __main__ - [INFO] -  → VALIDATE_ENV → VALIDATE_CONFIG [0.1s elapsed]
+2025-11-19 00:03:28,514 - __main__ - [INFO] - 📍 State: VALIDATE_CONFIG
+2025-11-19 00:03:28,514 - __main__ - [INFO] - 🔍 Initializing DeepSeek + Agents SDK...
+2025-11-19 00:03:28,514 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💰 BudgetManager initialized: $2.00 budget, 40% cache
+2025-11-19 00:03:28,514 - __main__ - [INFO] - ✅ Budget manager initialized ($2 limit)
+2025-11-19 00:03:28,800 - ai_summarizator.ps3_engine_element.deepseek_interface - [INFO] - ✅ DeepSeekInterface initialized
+2025-11-19 00:03:28,800 - ai_summarizator.ps3_engine_element.deepseek_interface - [INFO] -    Effective context window: 32000 tokens
+2025-11-19 00:03:28,801 - ai_summarizator.ps3_engine_element.deepseek_interface - [INFO] -    Context rot threshold: 25600 tokens
+2025-11-19 00:03:28,801 - __main__ - [INFO] - ✅ DeepSeekInterface initialized (32K effective context)
+2025-11-19 00:03:28,801 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLMController initialized: deepseek-chat @ DeepSeek | Timeout: read=120.0s, connect=30.0s | Retries: 3 | Cost tracking: ✅
+2025-11-19 00:03:28,801 - __main__ - [INFO] - ✅ LLMController initialized
+2025-11-19 00:03:28,801 - __main__ - [INFO] - ✅ OpenAI Agents SDK configured for DeepSeek endpoint
+2025-11-19 00:03:28,801 - ai_summarizator.utils.prompt_loader - [INFO] - 🔧 PromptLoader initialized at docs/prompts
+2025-11-19 00:03:28,801 - __main__ - [INFO] - ✅ PromptLoader initialized
+2025-11-19 00:03:28,801 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ✅ All routes valid
+2025-11-19 00:03:28,801 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ================================================================================
+2025-11-19 00:03:28,801 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - 📚 LOADING PROMPTS FOR ALL AGENTS
+2025-11-19 00:03:28,801 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ================================================================================
+2025-11-19 00:03:28,802 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for coordinator_agent (4835 chars)
+2025-11-19 00:03:28,802 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [coordinator_agent                       ]   4835 chars
+2025-11-19 00:03:28,803 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for timeline_agent (5568 chars)
+2025-11-19 00:03:28,803 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [timeline_agent                          ]   5568 chars
+2025-11-19 00:03:28,804 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for error_detection_agent_v1 (8261 chars)
+2025-11-19 00:03:28,805 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [error_detection_agent_v1                ]   8261 chars
+2025-11-19 00:03:28,806 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for confidence_scoring_agent_v1 (7628 chars)
+2025-11-19 00:03:28,806 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [confidence_scoring_agent_v1             ]   7628 chars
+2025-11-19 00:03:28,807 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for hallucination_detection_agent (5675 chars)
+2025-11-19 00:03:28,808 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [hallucination_detection_agent           ]   5675 chars
+2025-11-19 00:03:28,808 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for error_detection_agent_v2 (6071 chars)
+2025-11-19 00:03:28,808 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [error_detection_agent_v2                ]   6071 chars
+2025-11-19 00:03:28,810 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for confidence_scoring_agent_v2 (5286 chars)
+2025-11-19 00:03:28,810 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [confidence_scoring_agent_v2             ]   5286 chars
+2025-11-19 00:03:28,810 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for judge_agent (5230 chars)
+2025-11-19 00:03:28,810 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [judge_agent                             ]   5230 chars
+2025-11-19 00:03:28,811 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for aggregation_agent (6606 chars)
+2025-11-19 00:03:28,812 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [aggregation_agent                       ]   6606 chars
+2025-11-19 00:03:28,812 - ai_summarizator.utils.prompt_loader - [INFO] - ✅ Loaded prompt text for report_generator_agent (11071 chars)
+2025-11-19 00:03:28,812 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ [report_generator_agent                  ]  11071 chars
+2025-11-19 00:03:28,813 - __main__ - [INFO] - ✅ AgentFactory created
+2025-11-19 00:03:28,814 - __main__ - [INFO] -  → VALIDATE_CONFIG → EXTRACT [0.4s elapsed]
+2025-11-19 00:03:28,814 - __main__ - [INFO] - 📍 State: EXTRACT
+2025-11-19 00:03:28,814 - __main__ - [INFO] - 📂 Extracting documents...
+2025-11-19 00:03:28,817 - __main__ - [INFO] -  📖 asset_quality_analysis.md (87,204 chars)
+2025-11-19 00:03:28,876 - __main__ - [INFO] -  📖 audit_security_review.md (57,133 chars)
+2025-11-19 00:03:28,897 - __main__ - [INFO] -  📖 collateral_hedging_mechanisms.md (64,730 chars)
+2025-11-19 00:03:28,899 - __main__ - [INFO] -  📖 contract_maturity_analysis.md (46,355 chars)
+2025-11-19 00:03:28,902 - __main__ - [INFO] -  📖 delta_neutral_hedging.md (63,117 chars)
+2025-11-19 00:03:28,904 - __main__ - [INFO] -  📖 incident_financial_depeg.md (26,374 chars)
+2025-11-19 00:03:28,923 - __main__ - [INFO] -  📖 infrastructure_centralization_vulnerabilities.md (98,997 chars)
+2025-11-19 00:03:28,924 - __main__ - [INFO] -  📖 protocol_governance_assessment.md (39,922 chars)
+2025-11-19 00:03:28,926 - __main__ - [INFO] -  📖 reserves_audit_transparency.md (16,268 chars)
+2025-11-19 00:03:28,927 - __main__ - [INFO] -  📖 stability_track_record.md (66,162 chars)
+2025-11-19 00:03:28,928 - __main__ - [INFO] -  📖 stablecoin_derivatives_analysis.md (58,082 chars)
+2025-11-19 00:03:28,928 - __main__ - [INFO] -  📖 stablecoin_risk_analysis.md (41,266 chars)
+2025-11-19 00:03:28,929 - __main__ - [INFO] -  📖 staking_slashing_defense.md (34,499 chars)
+2025-11-19 00:03:28,932 - __main__ - [INFO] -  📖 synthetic_delta_hedging.md (49,531 chars)
+2025-11-19 00:03:28,932 - __main__ - [INFO] -  📖 total_value_locked.md (37,942 chars)
+2025-11-19 00:03:28,933 - __main__ - [INFO] -  📖 user_rights_assessment.md (30,241 chars)
+2025-11-19 00:03:28,933 - __main__ - [INFO] - ✅ Extracted 16 document(s) (817,823 total chars)
+2025-11-19 00:03:28,933 - __main__ - [INFO] -  → EXTRACT → LOAD_PROMPTS [0.5s elapsed]
+2025-11-19 00:03:28,933 - __main__ - [INFO] - 📍 State: LOAD_PROMPTS
+2025-11-19 00:03:28,933 - __main__ - [INFO] - 📋 Loading prompts...
+2025-11-19 00:03:28,933 - __main__ - [INFO] - ✅ Prompts ready
+2025-11-19 00:03:28,933 - __main__ - [INFO] -  → LOAD_PROMPTS → L0_META_REASONING [0.5s elapsed]
+2025-11-19 00:03:28,933 - __main__ - [INFO] - 📍 State: L0_META_REASONING
+2025-11-19 00:03:28,933 - __main__ - [INFO] - 
+======================================================================
+2025-11-19 00:03:28,933 - __main__ - [INFO] - 0️⃣ LAYER 0: ENTITY-GRAPH + DSA COMPRESSION
+2025-11-19 00:03:28,933 - __main__ - [INFO] - ======================================================================
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] - 🎯 coordinator initialized | workspace: workspace
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] -    Compression mode: Entity-Graph + DSA
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] -    Orchestration mode: Sequential (L1→L2→L3→L4)
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] -    Effective context: 32,000 tokens
+2025-11-19 00:03:28,934 - __main__ - [INFO] - ✅ CoordinatorAgent created
+2025-11-19 00:03:28,934 - __main__ - [INFO] - 
+📊 STEP 1: Building entity-relationship graph...
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+📊 L0: ENTITY-GRAPH + DSA (16 docs)
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-11-19 00:03:28,934 - ai_summarizator.management_device.coordinator_agent - [INFO] -   🔧 L0: Building entity-relationship graph from 16 docs...
+2025-11-19 00:03:32,546 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:04:36,587 - ai_summarizator.ps4_energy_source.cost_calculator - [INFO] - ✅ CostCalculator initialized (cache_rate=40%, using DeepSeek V3 pricing)
+2025-11-19 00:04:36,587 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 entity_graph_builder: $0.0030 (11621+2078 tokens)
+2025-11-19 00:04:36,587 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 5438 chars | 11621→2078 tokens | $0.0030 | 67645.8ms | agent=entity_graph_builder | trace=d2e99bd9
+2025-11-19 00:04:36,588 - ai_summarizator.management_device.coordinator_agent - [INFO] -   ✅ Graph structure valid: 30 entities, 32 relationships
+2025-11-19 00:04:36,588 - ai_summarizator.management_device.coordinator_agent - [INFO] -   ✅ Entity graph: 30 nodes, 32 edges, ~749 tokens
+2025-11-19 00:04:36,588 - ai_summarizator.management_device.coordinator_agent - [INFO] -   🔧 Applying DSA compression...
+2025-11-19 00:04:36,589 - ai_summarizator.management_device.coordinator_agent - [INFO] -   ✅ DSA: 30→30 nodes, 32→32 edges (0.0% reduction)
+2025-11-19 00:04:36,612 - ai_summarizator.management_device.coordinator_agent - [INFO] -   💾 Cached: entity_graph_d54a8bc832f607ba
+2025-11-19 00:04:36,612 - __main__ - [INFO] - ✅ L0 Complete:
+2025-11-19 00:04:36,612 - __main__ - [INFO] -    Entities: 30
+2025-11-19 00:04:36,612 - __main__ - [INFO] -    Relationships: 8
+2025-11-19 00:04:36,613 - __main__ - [INFO] -    Compressed tokens: 749
+2025-11-19 00:04:36,613 - __main__ - [INFO] -    Cache key: entity_graph_d54a8bc832f607ba
+2025-11-19 00:04:36,613 - __main__ - [INFO] -  → L0_META_REASONING → ROUTE [68.2s elapsed]
+2025-11-19 00:04:36,613 - __main__ - [INFO] - 📍 State: ROUTE
+2025-11-19 00:04:36,613 - __main__ - [INFO] - 🛣️ Routing to sequential L1-L4 execution...
+2025-11-19 00:04:36,613 - __main__ - [INFO] -  → ROUTE → EXECUTE_SEQUENTIAL [68.2s elapsed]
+2025-11-19 00:04:36,613 - __main__ - [INFO] - 📍 State: EXECUTE_SEQUENTIAL
+2025-11-19 00:04:36,613 - __main__ - [INFO] - 
+======================================================================
+2025-11-19 00:04:36,613 - __main__ - [INFO] - 🚀 EXECUTING SEQUENTIAL PIPELINE: L1→L2→L3→L4
+2025-11-19 00:04:36,613 - __main__ - [INFO] - ======================================================================
+2025-11-19 00:04:36,613 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+╔════════════════════════════════════════════════════════════════════╗
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] - ║ 🎯 SEQUENTIAL ORCHESTRATION: L1→L2→L3→L4 (REAL AGENTS)
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] - ╚════════════════════════════════════════════════════════════════════╝
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+1️⃣ LAYER 1: Base Agents (Sequential)
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] -   📦 Chunk 1/2: 20 nodes
+2025-11-19 00:04:36,614 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling timeline_agent + error_detection_agent + confidence_scoring_agent_v1...
+2025-11-19 00:04:36,614 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ TimelineAgent created
+2025-11-19 00:04:36,615 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] - ✅ Loaded incorrect_informations.md (41169 chars)
+2025-11-19 00:04:36,615 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ErrorDetectionAgentV1 created
+2025-11-19 00:04:36,615 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ConfidenceScoringAgentV1 created
+2025-11-19 00:04:36,615 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] - 📅 timeline_agent.execute() started
+2025-11-19 00:04:36,616 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] -   Calling LLM (7497 chars)...
+2025-11-19 00:04:37,052 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:05:39,721 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0013 (2311+2020 tokens)
+2025-11-19 00:05:39,721 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 5982 chars | 2311→2020 tokens | $0.0013 | 63105.2ms | agent=unknown | trace=5d339225
+2025-11-19 00:05:39,721 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] -   ✅ LLM returned 6413 chars
+2025-11-19 00:05:39,721 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] - 🚨 error_detection_agent_v1.execute() started
+2025-11-19 00:05:39,722 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] -   Calling LLM with 51457 char prompt...
+2025-11-19 00:05:40,334 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:05:52,522 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0027 (14127+336 tokens)
+2025-11-19 00:05:52,522 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 1844 chars | 14127→336 tokens | $0.0027 | 12800.1ms | agent=unknown | trace=b4efa03d
+2025-11-19 00:05:52,522 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] -   ✅ LLM returned 2067 chars
+2025-11-19 00:05:52,522 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] - ⭐ confidence_scoring_agent_v1.execute() started
+2025-11-19 00:05:52,522 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] -   Calling LLM...
+2025-11-19 00:05:53,035 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:06:56,118 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0018 (5174+2048 tokens)
+2025-11-19 00:06:56,118 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 7109 chars | 5174→2048 tokens | $0.0018 | 63595.4ms | agent=unknown | trace=d6908d42
+2025-11-19 00:06:56,118 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] -   ✅ LLM returned 7458 chars
+2025-11-19 00:06:56,118 - ai_summarizator.management_device.coordinator_agent - [INFO] -   📦 Chunk 2/2: 10 nodes
+2025-11-19 00:06:56,118 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling timeline_agent + error_detection_agent + confidence_scoring_agent_v1...
+2025-11-19 00:06:56,118 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ TimelineAgent created
+2025-11-19 00:06:56,120 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] - ✅ Loaded incorrect_informations.md (41169 chars)
+2025-11-19 00:06:56,121 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ErrorDetectionAgentV1 created
+2025-11-19 00:06:56,121 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ConfidenceScoringAgentV1 created
+2025-11-19 00:06:56,121 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] - 📅 timeline_agent.execute() started
+2025-11-19 00:06:56,121 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] -   Calling LLM (6419 chars)...
+2025-11-19 00:06:56,520 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:07:22,427 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0007 (1919+812 tokens)
+2025-11-19 00:07:22,427 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 2915 chars | 1919→812 tokens | $0.0007 | 26306.4ms | agent=unknown | trace=3c555a59
+2025-11-19 00:07:22,427 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.timeline_agent - [INFO] -   ✅ LLM returned 3193 chars
+2025-11-19 00:07:22,427 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] - 🚨 error_detection_agent_v1.execute() started
+2025-11-19 00:07:22,428 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] -   Calling LLM with 50379 char prompt...
+2025-11-19 00:07:23,043 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:07:35,914 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0026 (13735+358 tokens)
+2025-11-19 00:07:35,914 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 1694 chars | 13735→358 tokens | $0.0026 | 13485.9ms | agent=unknown | trace=d657e10b
+2025-11-19 00:07:35,914 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.error_detection_agent_v1 - [INFO] -   ✅ LLM returned 1909 chars
+2025-11-19 00:07:35,914 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] - ⭐ confidence_scoring_agent_v1.execute() started
+2025-11-19 00:07:35,914 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] -   Calling LLM...
+2025-11-19 00:07:36,353 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:08:39,022 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0015 (3731+2048 tokens)
+2025-11-19 00:08:39,022 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 7359 chars | 3731→2048 tokens | $0.0015 | 63107.8ms | agent=unknown | trace=2645a3a0
+2025-11-19 00:08:39,022 - ai_summarizator.ps1_working_element.agents.layer1_base_agents.confidence_scoring_agent_v1 - [INFO] -   ✅ LLM returned 7712 chars
+2025-11-19 00:08:39,022 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+2️⃣ LAYER 2: Validation Agents (Sequential)
+2025-11-19 00:08:39,022 - ai_summarizator.management_device.coordinator_agent - [INFO] - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-11-19 00:08:39,022 - ai_summarizator.management_device.coordinator_agent - [INFO] -   🔍 Validating L1 result 1/2
+2025-11-19 00:08:39,022 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling hallucination_detection + judge_agent
+2025-11-19 00:08:39,023 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ HallucinationDetectionAgent created
+2025-11-19 00:08:39,023 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ JudgeAgent created
+2025-11-19 00:08:39,023 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] - 👁️ hallucination_detection_agent.execute() started
+2025-11-19 00:08:39,023 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] -   Calling LLM...
+2025-11-19 00:08:39,533 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:09:33,704 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0021 (7885+1652 tokens)
+2025-11-19 00:09:33,704 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 5727 chars | 7885→1652 tokens | $0.0021 | 54680.5ms | agent=unknown | trace=e7e92b47
+2025-11-19 00:09:33,704 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] -   ✅ LLM returned 6071 chars
+2025-11-19 00:09:33,704 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] - ⚖️ judge_agent.execute() started
+2025-11-19 00:09:33,704 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] -   Calling LLM...
+2025-11-19 00:09:34,131 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:10:39,044 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0022 (7708+2048 tokens)
+2025-11-19 00:10:39,045 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 8287 chars | 7708→2048 tokens | $0.0022 | 65339.6ms | agent=unknown | trace=6c324e37
+2025-11-19 00:10:39,046 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] -   ✅ LLM returned 8638 chars
+2025-11-19 00:10:39,046 - ai_summarizator.management_device.coordinator_agent - [INFO] -   🔍 Validating L1 result 2/2
+2025-11-19 00:10:39,046 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling hallucination_detection + judge_agent
+2025-11-19 00:10:39,047 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ HallucinationDetectionAgent created
+2025-11-19 00:10:39,047 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ JudgeAgent created
+2025-11-19 00:10:39,048 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] - 👁️ hallucination_detection_agent.execute() started
+2025-11-19 00:10:39,048 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] -   Calling LLM...
+2025-11-19 00:10:39,462 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:11:45,681 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0019 (5903+2048 tokens)
+2025-11-19 00:11:45,681 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 7534 chars | 5903→2048 tokens | $0.0019 | 66632.9ms | agent=unknown | trace=f5c50a70
+2025-11-19 00:11:45,681 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.hallucination_detection_agent - [INFO] -   ✅ LLM returned 7920 chars
+2025-11-19 00:11:45,681 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] - ⚖️ judge_agent.execute() started
+2025-11-19 00:11:45,681 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] -   Calling LLM...
+2025-11-19 00:11:46,116 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:12:48,877 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 unknown: $0.0018 (5726+1832 tokens)
+2025-11-19 00:12:48,877 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 7048 chars | 5726→1832 tokens | $0.0018 | 63195.9ms | agent=unknown | trace=0238f2f0
+2025-11-19 00:12:48,877 - ai_summarizator.ps1_working_element.agents.layer2_validation_agents.judge_agent - [INFO] -   ✅ LLM returned 7404 chars
+2025-11-19 00:12:48,878 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+3️⃣ LAYER 3: Aggregation
+2025-11-19 00:12:48,878 - ai_summarizator.management_device.coordinator_agent - [INFO] - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-11-19 00:12:48,878 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling aggregation_agent...
+2025-11-19 00:12:48,879 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ AggregationAgent created
+2025-11-19 00:12:48,879 - ai_summarizator.ps1_working_element.agents.layer3_aggregation_agents.aggregation_agent - [INFO] - 📦 aggregation_agent.execute() started
+2025-11-19 00:12:48,879 - ai_summarizator.ps1_working_element.agents.layer3_aggregation_agents.aggregation_agent - [INFO] -   Input: 21674 chars
+2025-11-19 00:12:48,879 - ai_summarizator.ps1_working_element.agents.layer3_aggregation_agents.aggregation_agent - [INFO] -   Calling LLM...
+2025-11-19 00:12:49,607 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:14:53,463 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 aggregation_agent: $0.0031 (8269+3836 tokens)
+2025-11-19 00:14:53,463 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 14064 chars | 8269→3836 tokens | $0.0031 | 124582.5ms | agent=aggregation_agent | trace=a2272ef3
+2025-11-19 00:14:53,464 - ai_summarizator.ps1_working_element.agents.layer3_aggregation_agents.aggregation_agent - [INFO] -   ✅ LLM returned 14064 chars
+2025-11-19 00:14:53,479 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+4️⃣ LAYER 4: Report Generation
+2025-11-19 00:14:53,479 - ai_summarizator.management_device.coordinator_agent - [INFO] - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2025-11-19 00:14:53,479 - ai_summarizator.management_device.coordinator_agent - [INFO] -     🔧 Calling report_generator_agent...
+2025-11-19 00:14:53,481 - ai_summarizator.ps1_working_element.agents.agent_factory - [INFO] - ✅ ReportGeneratorAgent created
+2025-11-19 00:14:53,481 - ai_summarizator.ps1_working_element.agents.layer4_report_agent.report_generator_agent - [INFO] - 📄 report_generator_agent.execute() started
+2025-11-19 00:14:53,481 - ai_summarizator.ps1_working_element.agents.layer4_report_agent.report_generator_agent - [INFO] -   Input: 37798 chars
+2025-11-19 00:14:53,481 - ai_summarizator.ps1_working_element.agents.layer4_report_agent.report_generator_agent - [INFO] -   Calling LLM...
+2025-11-19 00:14:54,317 - httpx - [INFO] - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-11-19 00:17:07,472 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - 💳 report_generator_agent: $0.0042 (14073+3953 tokens)
+2025-11-19 00:17:07,473 - ai_summarizator.ps3_engine_element.llm_controller - [INFO] - ✅ LLM response: 16372 chars | 14073→3953 tokens | $0.0042 | 133990.9ms | agent=report_generator_agent | trace=579a1adf
+2025-11-19 00:17:07,473 - ai_summarizator.ps1_working_element.agents.layer4_report_agent.report_generator_agent - [INFO] -   ✅ LLM returned 16372 chars
+2025-11-19 00:17:07,474 - ai_summarizator.management_device.coordinator_agent - [INFO] -   ✅ Report saved: workspace/output/final_report.md
+2025-11-19 00:17:07,474 - ai_summarizator.management_device.coordinator_agent - [INFO] - 
+╔════════════════════════════════════════════════════════════════════╗
+2025-11-19 00:17:07,474 - ai_summarizator.management_device.coordinator_agent - [INFO] - ║ ✅ SEQUENTIAL PIPELINE COMPLETE
+2025-11-19 00:17:07,474 - ai_summarizator.management_device.coordinator_agent - [INFO] - ╚════════════════════════════════════════════════════════════════════╝
+2025-11-19 00:17:07,475 - __main__ - [INFO] - 
+✅ SEQUENTIAL PIPELINE COMPLETE
+2025-11-19 00:17:07,475 - __main__ - [INFO] -    L1 chunks processed: 2
+2025-11-19 00:17:07,475 - __main__ - [INFO] -    L2 validations: 2
+2025-11-19 00:17:07,475 - __main__ - [INFO] -    L3 aggregated entities: 29
+2025-11-19 00:17:07,475 - __main__ - [INFO] -    L4 report generated: True
+2025-11-19 00:17:07,475 - __main__ - [INFO] -  → EXECUTE_SEQUENTIAL → FINALIZE [819.0s elapsed]
+2025-11-19 00:17:07,475 - __main__ - [INFO] - 📍 State: FINALIZE
+2025-11-19 00:17:07,475 - __main__ - [INFO] - 
+======================================================================
+2025-11-19 00:17:07,476 - __main__ - [INFO] - 🔚 FINALIZING PIPELINE
+2025-11-19 00:17:07,476 - __main__ - [INFO] - ======================================================================
+2025-11-19 00:17:07,476 - __main__ - [INFO] - 
+📊 ENTITY-GRAPH COMPRESSION REPORT:
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Original edges: 32
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Compressed edges: 32
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Reduction: 0.0%
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Original tokens: 749
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Compressed tokens: 749
+2025-11-19 00:17:07,476 - __main__ - [INFO] -    Cache key: entity_graph_d54a8bc832f607ba
+2025-11-19 00:17:07,476 - __main__ - [INFO] - 
+✅ Report exists: workspace/output/final_report.md
+2025-11-19 00:17:07,477 - __main__ - [INFO] -    Size: 16,372 bytes
+2025-11-19 00:17:08,205 - ai_summarizator.ps4_energy_source.token_counter - [INFO] - ✅ TokenCounter initialized
+2025-11-19 00:17:08,206 - ai_summarizator.ps4_energy_source.budget_manager - [INFO] - ✅ Budget OK: $0.029 / $2.00
+2025-11-19 00:17:08,209 - __main__ - [INFO] - 
+💰 COST REPORT:
+2025-11-19 00:17:08,209 - __main__ - [INFO] -    Requests: 13 (100.0% success)
+2025-11-19 00:17:08,209 - __main__ - [INFO] -    Tokens: 127,251 total (102,182 in, 25,069 out)
+2025-11-19 00:17:08,209 - __main__ - [INFO] -    Cost: $0.0288 / $2.00 (1.4%)
+2025-11-19 00:17:08,209 - __main__ - [INFO] -    Budget status: ✅ OK
+2025-11-19 00:17:08,210 - __main__ - [INFO] -    ✅ Within $2 budget constraint
+2025-11-19 00:17:08,210 - __main__ - [INFO] - 
+======================================================================
+2025-11-19 00:17:08,210 - __main__ - [INFO] - ✅ PIPELINE COMPLETED in 819.8s
+2025-11-19 00:17:08,210 - __main__ - [INFO] - ======================================================================
+2025-11-19 00:17:08,211 - __main__ - [INFO] -  → SUCCESS → SUCCESS [819.8s elapsed]
